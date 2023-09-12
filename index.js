@@ -10,6 +10,10 @@ const blog=require('./data/blog.json');
 
 app.get('/',(req,res)=>{
     res.send('Coding school api running...')
+});
+
+app.get('/courses',(req,res)=>{
+    res.json(courses);
 })
 
 app.listen(port,()=>{
